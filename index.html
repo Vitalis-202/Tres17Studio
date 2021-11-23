@@ -9,15 +9,15 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <img src="./assets/img/logo-tres17.png" alt="Logo de Tres17Studio" class="header-logo">
+    <header class="header--container">
+        <img src="./assets/img/logo-tres17.png" alt="Logo de Tres17Studio" class="header__logo">
         <!--Navbar-->
-        <nav>
-            <ul>
+        <nav class="header__nav">
+            <ul class="header__lista">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="./rutas/nosotros.html">Nosotros</a></li>
-                <li><a href="./rutas/arcades.html">Arcades</a></li>
                 <li><a href="./rutas/locales.html">Locales</a></li>
+                <li><a href="./rutas/arcades.html">Arcades</a></li>
                 <li><a href="./rutas/contacto.html">Contacto</a></li>
 
             </ul>
@@ -26,19 +26,29 @@
     </header>
 
     <!--Main-->
-    <main>
-        <h1>Inicio</h1>
-        <p>Bienvenidos a Studio Tres17 - De vuelta a los 80s</p>
-        <img src="./assets/img/welcome.jpg" alt="Bienvenido a studioTres17" class="main-img">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/sMLVzlRwvrM" title="YouTube video player" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-        </iframe>
-
+    <main class="main--container">
+        
+        <section>
+            <h1 class="main--titulo">Inicio</h1>
+            <p class="main--subtitulo">Bienvenidos a Studio Tres17 - De vuelta a los 80s</p>
+        </section>
+        
+        <section>
+            <img src="./assets/img/welcome.jpg" alt="Bienvenido a studioTres17" class="main-img">
+        </section>
+        
+        <section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sMLVzlRwvrM" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+            </iframe>
+        </section>
+        
+        
     </main>
 
     <!-- Footer-->
-    <footer>
+    <footer class="footer--container">
         <nav>
             <ul>
                 <li><a href="facebook">/FacebookTres17Studio</a></li>

@@ -1,11 +1,90 @@
+/*Reglas generales*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	overflow-x: hidden;
+}
+html{
+	font-size: 62.5%;
+}
+
+/*Estilos de la aplicación*/
+/*INICIO ESTILOS HEADER*/
+.header--container {
+
+    background-color: #B10BB5;
+    color:whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+   
+}
+
+.header__logo {
+
+    height: 90px;
+    width: 90px;
+    margin-left: 1rem;
+}
+
+.header__nav{
+    margin-right: 1rem;
+}
+
+.header__lista{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    list-style-type: none;
+
+}
+
+.header__lista li{
+    
+    text-decoration: none;
+}
+
+.header__lista li:hover{
+
+    text-decoration: underline;
+
+}
+
+.header__lista li a{
+    
+    color:white;
+    font-size: 2.5rem;
+    text-decoration: none;
+    margin:1rem;
+    
+
+}
+
+/*FIN ESTILOS HEADER*/
+
+.main--container{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: #F52789;
+}
+
 .main-img {
 
-    height: 500px;
-    width: 800px;
+    height: 400px;
+    width: 100vw;
 }
 
-.header-logo {
+/*FOOTER - INICIO ESTILOS*/
+.footer--container{
 
-    height: 80px;
-    width: 80px;
+    display: flex;
+    background-color: #27C7EA;
+    
 }
+
+/*FOOTER - FIN ESTILOS*/
