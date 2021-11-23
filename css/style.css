@@ -61,7 +61,6 @@ html{
     text-decoration: none;
     margin:1rem;
     
-
 }
 
 /*FIN ESTILOS HEADER*/
@@ -73,18 +72,67 @@ html{
     background-color: #F52789;
 }
 
-.main-img {
+.main__img {
 
-    height: 400px;
+    height: 50vh;
+    /* height: 400px; */
     width: 100vw;
+}
+
+.main--container h1 {
+
+    color: whitesmoke;
+    font-size: 4rem;
+
 }
 
 /*FOOTER - INICIO ESTILOS*/
 .footer--container{
-
-    display: flex;
+    /*display: flex;*/
+    /* flex-direction: row; */
+    height: 50px;
+    justify-content: space-between;
     background-color: #27C7EA;
+}
+.footer--container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding-top:0.8rem;
+}
+
+.footer--container li{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
     
 }
+
+.footer--container li a{
+    
+    color:white;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer--container img {
+    width: 30px;
+    height:30px;
+    margin-right: 0.3rem;
+}
+
+.footer--container li:hover{
+
+    text-decoration: underline;
+
+}
+
+
 
 /*FOOTER - FIN ESTILOS*/
