@@ -64,6 +64,7 @@ html{
 }
 
 /*FIN ESTILOS HEADER*/
+/*Main - Index*/
 
 .main--container{
     display: flex;
@@ -81,10 +82,221 @@ html{
 
 .main--container h1 {
 
+    display: flex;
     color: whitesmoke;
     font-size: 4rem;
+    justify-content: center;
+    font-weight: bold;
 
 }
+
+.main--container p {
+
+    color: whitesmoke;
+    font-size: 2rem;
+
+}
+/*Main - Index - Fin*/
+/*Main - nosotos - Inicio*/
+.nosotros--container{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background: url(../assets/img/fondo.jpg) repeat-x 0 0;
+}
+
+.nosotros--container img{
+
+    width: 60vw;
+    height: 450px;
+}
+
+.nosotros--container h1{
+
+    display: flex;
+    color: whitesmoke;
+    font-size: 4rem;
+    justify-content: center;
+    font-weight: bold;
+    
+}
+
+.nosotros--container p{
+
+    color: whitesmoke;
+    font-size: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    
+}
+
+
+/*Main - nosotros - fin*/
+/*Main - arcade - inicio*/
+.local--container{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
+}
+
+.local--titulo h1{
+
+    display: flex;
+    color: whitesmoke;
+    font-size: 4rem;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+}
+.local--titulo p{
+    color: whitesmoke;
+    font-size: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.local--galeria {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.local--galeria div {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: whitesmoke 0.2rem solid;
+    margin: 0.5rem;
+    
+}
+
+.local--galeria img{
+    width: 30vw;
+    height: 300px;
+}
+
+.local--galeria p{
+
+    color: #B10BB5;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/*Main - arcade - inicio*/
+
+/*Main - locales - inicio*/
+
+.arcade--container{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
+}
+
+.arcade--titulo h1{
+
+    display: flex;
+    color: whitesmoke;
+    font-size: 4rem;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+}
+.arcade--titulo p{
+    color: whitesmoke;
+    font-size: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.arcade--galeria {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.arcade--galeria div {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: whitesmoke 0.2rem solid;
+    margin: 0.5rem;
+    
+}
+
+.arcade--galeria img{
+    width: 30vw;
+    height: 300px;
+}
+
+.arcade--galeria p{
+
+    color: #B10BB5;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/*Main - locales - fin*/
+
+/*Main - formulario - inicio*/
+
+.form--container{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
+}
+
+.form--container__formulario {
+
+    display: flex;
+    flex-direction:column;
+    
+}
+
+.form--container__formulario form {
+
+    border: whitesmoke 0.2rem solid;;
+    width: 50vw;
+    height: 300px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.form--container__formulario form h1{
+    display: flex;
+    color: whitesmoke;
+    font-size: 3rem;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.form--container__formulario form label{
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.form--container__formulario form button{
+    
+    width: 40vw;
+    height: 100px;
+}
+
+/*Main - formulario - fin*/
+
 
 /*FOOTER - INICIO ESTILOS*/
 .footer--container{
