@@ -118,10 +118,12 @@ html{
 /*Main - Index - Fin*/
 /*Main - nosotos - Inicio*/
 .nosotros--container{
+    grid-area: container;
     display: flex;
     flex-direction:column;
     align-items:center;
     background: url(../assets/img/fondo.jpg) repeat-x 0 0;
+    background-color: #F52789;
 }
 
 .nosotros--container img{
@@ -134,7 +136,7 @@ html{
 
     display: flex;
     color: whitesmoke;
-    font-size: 4rem;
+    font-size: 5rem;
     justify-content: center;
     font-weight: bold;
     
@@ -146,6 +148,7 @@ html{
     font-size: 2rem;
     margin-left: 15rem;
     margin-right: 15rem;
+    font-weight: 900;
     
 }
 
@@ -153,10 +156,13 @@ html{
 /*Main - nosotros - fin*/
 /*Main - arcade - inicio*/
 .local--container{
+    grid-area: container;
     display: flex;
     flex-direction:column;
     align-items:center;
     background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
+    background-color: #F52789;
+
 }
 
 .local--titulo h1{
@@ -211,10 +217,12 @@ html{
 /*Main - locales - inicio*/
 
 .arcade--container{
+    grid-area: container;
     display: flex;
     flex-direction:column;
     align-items:center;
     background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
+    background-color: #F52789;
 }
 
 .arcade--titulo h1{
@@ -273,6 +281,8 @@ html{
     flex-direction:column;
     align-items:center;
     background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
+    background-color: #F52789;
+    grid-area: container;
 }
 
 .form--container__formulario {
@@ -284,9 +294,9 @@ html{
 
 .form--container__formulario form {
 
-    border: whitesmoke 0.2rem solid;;
+    border: whitesmoke 0.4rem solid;;
     width: 50vw;
-    height: 300px;
+    height: 80vh;
     display: flex;
     flex-direction:column;
     justify-content: space-around;
@@ -297,14 +307,14 @@ html{
 .form--container__formulario form h1{
     display: flex;
     color: whitesmoke;
-    font-size: 3rem;
+    font-size: 4rem;
     justify-content: center;
     font-weight: bold;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 .form--container__formulario form label{
     color: whitesmoke;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
