@@ -31,15 +31,14 @@ html{
 .header--container {
 
     grid-area: header;
-    background-color: #B10BB5;
+    background: rgb(245,39,137);
+    background: linear-gradient(180deg, rgba(245,39,137,1) 0%, rgba(233,0,255,1) 100%);
     color:whitesmoke;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position:sticky;
     top: 0px;
-    
-   
 }
 
 .header__logo {
@@ -89,7 +88,8 @@ html{
     display: flex;
     flex-direction:column;
     align-items:center;
-    background-color: #F52789;
+    background: rgb(245,39,137);
+    background: linear-gradient(90deg, rgba(245,39,137,1) 0%, rgba(233,0,255,0.9428448623485779) 55%, rgba(233,0,255,1) 100%);
 }
 
 .main__img {
@@ -289,7 +289,6 @@ html{
 
     display: flex;
     flex-direction:column;
-    
 }
 
 .form--container__formulario form {
@@ -335,7 +334,8 @@ html{
     /* height: 50px; */
     justify-content: center;
     align-items: center;
-    background-color: #27C7EA;
+    background: rgb(39,199,234);
+    background: radial-gradient(circle, rgba(39,199,234,1) 50%, rgba(61,20,76,1) 85%);
 }
 .footer--container ul{
     display: flex;
@@ -350,7 +350,6 @@ html{
     flex-direction:row;
     justify-content: space-around;
     align-items: center;
-    
 }
 
 .footer--container li a{
@@ -372,9 +371,6 @@ html{
 }
 
 .footer--container li:hover{
-
     text-decoration: underline;
-
 }
-
 /*FOOTER - FIN ESTILOS*/
