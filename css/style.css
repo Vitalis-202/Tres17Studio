@@ -15,7 +15,6 @@ html{
 
 /*FIN ESTILO GRID PRINCIPAL*/
 .grilla {
-
     display: grid;
     grid-template-areas:
         "header header header"
@@ -24,12 +23,10 @@ html{
         "footer footer footer";
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr auto auto 1fr;
-
 }
 
 /*INICIO ESTILOS HEADER*/
 .header--container {
-
     grid-area: header;
     background: rgb(245,39,137);
     background: linear-gradient(180deg, rgba(245,39,137,1) 0%, rgba(233,0,255,1) 100%);
@@ -42,10 +39,10 @@ html{
 }
 
 .header__logo {
-
     height: 90px;
     width: 90px;
     margin-left: 1rem;
+    animation: animacion 10s linear infinite;
 }
 
 .header__nav{
@@ -61,23 +58,22 @@ html{
 }
 
 .header__lista li{
-    
     text-decoration: none;
 }
 
 .header__lista li:hover{
-
     text-decoration: underline;
-
 }
 
 .header__lista li a{
-    
     color:white;
     font-size: 2.5rem;
     text-decoration: none;
     margin:1rem;
-    
+}
+
+.header__lista li a:focus{
+    font-size: 3rem;
 }
 
 /*FIN ESTILOS HEADER*/
@@ -93,14 +89,12 @@ html{
 }
 
 .main__img {
-
     height: 50vh;
     /* height: 400px; */
     width: 80vw;
 }
 
 .main--container h1 {
-
     display: flex;
     color: whitesmoke;
     font-size: 4rem;
@@ -110,10 +104,8 @@ html{
 }
 
 .main--container p {
-
     color: whitesmoke;
     font-size: 2rem;
-
 }
 /*Main - Index - Fin*/
 /*Main - nosotos - Inicio*/
@@ -127,29 +119,24 @@ html{
 }
 
 .nosotros--container img{
-
     width: 60vw;
     height: 450px;
 }
 
 .nosotros--container h1{
-
     display: flex;
     color: whitesmoke;
     font-size: 5rem;
     justify-content: center;
     font-weight: bold;
-    
 }
 
 .nosotros--container p{
-
     color: whitesmoke;
     font-size: 2rem;
     margin-left: 15rem;
     margin-right: 15rem;
     font-weight: 900;
-    
 }
 
 
@@ -162,18 +149,15 @@ html{
     align-items:center;
     background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
     background-color: #F52789;
-
 }
 
 .local--titulo h1{
-
     display: flex;
     color: whitesmoke;
     font-size: 4rem;
     justify-content: center;
     font-weight: bold;
     margin-bottom: 1rem;
-
 }
 .local--titulo p{
     color: whitesmoke;
@@ -183,7 +167,6 @@ html{
 }
 
 .local--galeria {
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -191,13 +174,11 @@ html{
 }
 
 .local--galeria div {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     border: whitesmoke 0.2rem solid;
     margin: 0.5rem;
-    
 }
 
 .local--galeria img{
@@ -206,7 +187,6 @@ html{
 }
 
 .local--galeria p{
-
     color: #B10BB5;
     font-size: 1.2rem;
     font-weight: bold;
@@ -226,7 +206,6 @@ html{
 }
 
 .arcade--titulo h1{
-
     display: flex;
     color: whitesmoke;
     font-size: 4rem;
@@ -243,7 +222,6 @@ html{
 }
 
 .arcade--galeria {
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -251,13 +229,11 @@ html{
 }
 
 .arcade--galeria div {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     border: whitesmoke 0.2rem solid;
     margin: 0.5rem;
-    
 }
 
 .arcade--galeria img{
@@ -266,7 +242,6 @@ html{
 }
 
 .arcade--galeria p{
-
     color: #B10BB5;
     font-size: 1.2rem;
     font-weight: bold;
@@ -286,13 +261,11 @@ html{
 }
 
 .form--container__formulario {
-
     display: flex;
     flex-direction:column;
 }
 
 .form--container__formulario form {
-
     border: whitesmoke 0.4rem solid;;
     width: 50vw;
     height: 80vh;
@@ -300,7 +273,6 @@ html{
     flex-direction:column;
     justify-content: space-around;
     align-items: center;
-    
 }
 
 .form--container__formulario form h1{
@@ -318,7 +290,6 @@ html{
 }
 
 .form--container__formulario form button{
-    
     width: 40vw;
     height: 100px;
 }
@@ -353,7 +324,6 @@ html{
 }
 
 .footer--container li a{
-    
     color:white;
     font-size: 2rem;
     text-decoration: none;
@@ -374,3 +344,13 @@ html{
     text-decoration: underline;
 }
 /*FOOTER - FIN ESTILOS*/
+/*ANIMACIONES - INICIO */
+@keyframes animacion {
+    0% {transform:translateX(100%)  rotate(0) scale(1);}
+    25% {transform:translateX(-50%) rotate(90deg) scale(1);}
+    50% {transform:translateX(100%) rotate(180deg) scale(1);}
+    75% {transform:translateX(-50%) rotate(270deg)scale(1);}
+    100% {transform:translateX(100%) rotate(360deg) scale(1);}
+}
+
+/*ANIMACIONES - FIN */
